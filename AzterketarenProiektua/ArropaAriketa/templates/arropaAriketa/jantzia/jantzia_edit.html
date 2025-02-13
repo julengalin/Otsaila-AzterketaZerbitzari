@@ -1,0 +1,14 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Jantzia editatu</h1>
+<br>
+{% for jantzia in jantziak %}
+<h4>
+    {{ jantzia }}
+    <a href="{% url 'edit-jantzia-form' jantzia_id=jantzia.id %}" class="btn btn-info">Edit</a>
+</h4>
+<br>
+{% endfor %}
+
+{% endblock %}

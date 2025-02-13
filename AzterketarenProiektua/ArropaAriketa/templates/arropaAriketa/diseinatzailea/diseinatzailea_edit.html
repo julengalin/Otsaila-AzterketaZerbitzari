@@ -1,0 +1,14 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Diseinatzailea editatu</h1>
+<br>
+{% for diseinatzailea in diseinatzaileak %}
+<h4>
+    {{ diseinatzailea }}
+    <a href="{% url 'edit-diseinatzailea-form' diseinatzailea_id=diseinatzailea.id %}" class="btn btn-info">Edit</a>
+</h4>
+<br>
+{% endfor %}
+
+{% endblock %}

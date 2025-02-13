@@ -1,0 +1,12 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Diseinatzailea guztiak</h1>
+<br>
+{% for diseinatzaile in diseinatzaileak %}
+    <h4>{{ diseinatzaile }}</h4>
+    <br>
+{% endfor %}
+
+
+{% endblock %}

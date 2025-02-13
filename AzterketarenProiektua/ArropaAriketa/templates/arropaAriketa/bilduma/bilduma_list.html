@@ -1,0 +1,12 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Bilduma guztiak</h1>
+<br>
+{% for bilduma in bildumak %}
+    <h4>{{ bilduma }}</h4>
+    <br>
+{% endfor %}
+
+
+{% endblock %}

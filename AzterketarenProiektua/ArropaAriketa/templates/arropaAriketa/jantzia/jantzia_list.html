@@ -1,0 +1,12 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Jantzi guztiak</h1>
+<br>
+{% for jantzi in jantziak %}
+    <h4>{{ jantzi }}</h4>
+    <br>
+{% endfor %}
+
+
+{% endblock %}

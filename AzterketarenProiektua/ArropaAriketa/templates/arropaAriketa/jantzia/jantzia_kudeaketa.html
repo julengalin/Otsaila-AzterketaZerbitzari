@@ -1,0 +1,17 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Kudeatu Jantziak</h1>
+<br>
+<a class="btn btn-primary" href="{% url 'jantzia-list' %}" role="button">Jantziak ikusi</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'new-jantzia' %}" role="button">Jantzi berria gehitu</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'delete-jantzia' %}" role="button">Jantzia ezabatu</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'edit-jantzia' %}" role="button">Jantzia editatu</a>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'arropaAriketa/base.html' %}
+{% block content %}
+
+<h1>Kudeatu Diseinatzaileak</h1>
+<br>
+<a class="btn btn-primary" href="{% url 'diseinatzailea-list' %}" role="button">Diseinatzaileak ikusi</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'new-diseinatzailea' %}" role="button">Diseinatzaile berria gehitu</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'delete-diseinatzailea' %}" role="button">Diseinatzailea ezabatu</a>
+<br>
+<br>
+<a class="btn btn-primary" href="{% url 'edit-diseinatzailea' %}" role="button">Diseinatzailea editatu</a>
+
+{% endblock %}

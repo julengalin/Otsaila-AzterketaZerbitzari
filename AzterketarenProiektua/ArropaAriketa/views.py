@@ -40,6 +40,7 @@ def edit_jantzia(request):
         jantzia.deskripzioa = request.POST.get("deskripzioa", jantzia.deskripzioa)
         jantzia.kolorea = request.POST.get("kolorea", jantzia.kolorea)
         jantzia.kopurua = request.POST.get("kopurua", jantzia.kopurua)
+        jantzia.kontzeptua = request.POST.get("kontzeptua", jantzia.kontzeptua)
         jantzia.save()
 
         return redirect('base')

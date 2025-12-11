@@ -12,7 +12,7 @@ class Jantzia(models.Model):
     deskripzioa = models.CharField(max_length=75)
     kolorea = models.CharField(max_length=75)
     kopurua = models.IntegerField()
-    kontzeptua = models.CharField(max_length=75, choices=KONTZEPTUA_CHOICES, default='Xabi')
+    kontzeptua = models.CharField(max_length=10, choices=KONTZEPTUA_CHOICES, default='Xabi')
 
     def __str__(self):
         return f"{self.deskripzioa} {self.kolorea} ({str(self.kopurua)})"

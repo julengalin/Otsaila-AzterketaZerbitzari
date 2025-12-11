@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='jantzia',
             name='kontzeptua',
-            field=models.CharField(choices=[('Xabi', 'Xabi'), ('Erik', 'Erik'), ('Jon', 'Jon')], default='Xabi', max_length=75),
+            field=models.CharField(choices=[('Xabi', 'Xabi'), ('Erik', 'Erik'), ('Jon', 'Jon')], default='Xabi', max_length=10),
         ),
     ]

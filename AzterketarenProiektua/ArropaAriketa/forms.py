@@ -4,7 +4,7 @@ from .models import Jantzia, Diseinatzailea,Bilduma
 class JantziaForm(forms.ModelForm):
     class Meta:
         model=Jantzia
-        fields=['deskripzioa','kolorea','kopurua']
+        fields=['deskripzioa','kolorea','kopurua','kontzeptua']
 
 class DiseinatzaileaForm(forms.ModelForm):
     class Meta:
